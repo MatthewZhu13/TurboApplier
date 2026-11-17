@@ -1,0 +1,10 @@
+{
+  "_comment": "Copy to data/private_facts.json. Stays on this Mac only (data/ is gitignored, never synced to Notion). Values are sent to the Claude API for mapping.",
+  "eeo_gender": "",
+  "eeo_race_ethnicity": "",
+  "eeo_hispanic_latino": "",
+  "eeo_veteran_status": "",
+  "eeo_disability_status": "",
+  "eeo_sexual_orientation": "",
+  "eeo_transgender": ""
+}

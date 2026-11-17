@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Runs "jobbot run" every 3 hours while you're logged in.
+     Install:   cp com.jobbot.run.plist ~/Library/LaunchAgents/ && launchctl load ~/Library/LaunchAgents/com.jobbot.run.plist
+     Uninstall: launchctl unload ~/Library/LaunchAgents/com.jobbot.run.plist -->
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.jobbot.run</string>
+  <key>ProgramArguments</key><array><string>/Users/matthewzhu/JobApplier/jobbot.sh</string><string>run</string></array>
+  <key>StartInterval</key><integer>10800</integer>
+  <key>StandardOutPath</key><string>/Users/matthewzhu/JobApplier/data/launchd.log</string>
+  <key>StandardErrorPath</key><string>/Users/matthewzhu/JobApplier/data/launchd.log</string>
+</dict></plist>
